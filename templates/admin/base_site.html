@@ -1,0 +1,10 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Real-Estate</a></h1>
+{% endblock %}
+
+{% block extrastyle%}
+<link href="{% static 'style.css' %}" rel="stylesheet">
+{% endblock %}
